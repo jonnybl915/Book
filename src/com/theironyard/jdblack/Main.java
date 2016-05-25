@@ -22,8 +22,6 @@ public class Main {
         else{
             book = new Book();
         }
-//        System.out.println(SAVE_FILE);
-
         System.out.println("Welcome to BookWorm.Com");
         System.out.println(" ");
         System.out.println("We'd like to compile information on your favorite book.");
