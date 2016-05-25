@@ -3,7 +3,6 @@ import jodd.json.JsonParser;
 import jodd.json.JsonSerializer;
 
 import java.io.FileNotFoundException;
-import java.util.HashMap;
 import java.util.Scanner;
 import java.io.FileWriter;
 import java.io.File;
