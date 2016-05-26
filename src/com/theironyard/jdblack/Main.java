@@ -27,30 +27,28 @@ public class Main {
         System.out.println(" ");
         System.out.println("We'll ask you a series of 5 questions about the book:");
         System.out.println(" ");
-        //System.out.println("Do you wish to proceed? [Y/N]");
-        //String option = scanner.nextLine();
-        //if(option.equalsIgnoreCase("Y")) {
-        //proceed to
 
-        Book b2 = new Book();
+
+        book = new Book();
         System.out.println("What is the title of the book?");
         String option1 = scanner.nextLine();
-        b2.title = option1;
+        book.title = option1;
         System.out.println("What is the author's name?");
         String option2 = scanner.nextLine();
-        b2.author = option2;
+        book.author = option2;
         System.out.println("What is the genre of the book?");
         String option3 = scanner.nextLine();
-        b2.genre = option3;
+        book.genre = option3;
         System.out.println("How many pages does the book contain?");
         String option4 = scanner.nextLine();
         int intNumOfPages = Integer.valueOf(option4);
-        b2.numberOfPages = intNumOfPages;
+        book.numberOfPages = intNumOfPages;
         System.out.println("In what year was the book written?");
         String option5 = scanner.nextLine();
         int intYearWritten = Integer.valueOf(option5);
-        b2.yearWritten = intYearWritten;
-        saveBook(b2, SAVE_FILE);
+        book.yearWritten = intYearWritten;
+        System.out.println("Thank you for completing the survey.");
+        saveBook(book, SAVE_FILE);
     }
     public static Book loadBook(String SAVE_FILE){
         File f = new File(SAVE_FILE);
