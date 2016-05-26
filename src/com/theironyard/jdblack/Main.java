@@ -11,7 +11,6 @@ public class Main {
 
     static final String SAVE_FILE = "book.json";
     static Scanner scanner = new Scanner(System.in);
-    static Book book;
     public static void main(String[] args) throws IOException {
 
         Book book = loadBook(SAVE_FILE);
@@ -59,7 +58,7 @@ public class Main {
             JsonParser parser = new JsonParser();
             return parser.parse(contents, Book.class);
         } catch (FileNotFoundException e) {
-            System.out.println("Failure to Load");
+            System.out.println("No File Found");
         }
 
         return null;

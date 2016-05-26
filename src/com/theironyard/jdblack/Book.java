@@ -43,13 +43,8 @@ public class Book {
                 ", yearWritten=" + yearWritten +
                 '}';
     }
-
-    //    public Book(String title, String author, String genre, int numberOfPages, int yearWritten){
-//        this.title = title;
-//        this.author = author;
-//        this.genre = genre;
-//        this.numberOfPages = numberOfPages;
-//        this.yearWritten = yearWritten;
 }
+
+
 
 
